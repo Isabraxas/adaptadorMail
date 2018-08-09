@@ -1,0 +1,4 @@
+/home/isvar/Documents/ejemplos/send email samples/statement-sender-provider/src/main/java/cc/viridian/provider/StatementSenderProvider.java
+/home/isvar/Documents/ejemplos/send email samples/statement-sender-provider/src/main/java/cc/viridian/provider/model/StatementDocument.java
+/home/isvar/Documents/ejemplos/send email samples/statement-sender-provider/src/main/java/cc/viridian/provider/model/ResponseSendStatement.java
+/home/isvar/Documents/ejemplos/send email samples/statement-sender-provider/src/main/java/cc/viridian/provider/spi/StatementSender.java

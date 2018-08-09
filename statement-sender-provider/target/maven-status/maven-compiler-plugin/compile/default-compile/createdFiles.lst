@@ -1,0 +1,4 @@
+cc/viridian/provider/StatementSenderProvider.class
+cc/viridian/provider/model/ResponseSendStatement.class
+cc/viridian/provider/spi/StatementSender.class
+cc/viridian/provider/model/StatementDocument.class

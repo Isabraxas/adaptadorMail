@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: emailSender
+  profiles:
+    active: default
+  cloud:
+    config:
+      #uri2: http://electron.viridian.cc:9002
+      uri: http://localhost:7000
+      username: ${CLOUD_CONFIG_USER:configuser}
+      password: ${CLOUD_CONFIG_PASS:configpass}
+      fail-fast: false
+      #profile: default
