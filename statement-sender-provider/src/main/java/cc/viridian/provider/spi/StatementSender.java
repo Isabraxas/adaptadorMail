@@ -9,5 +9,5 @@ public interface StatementSender {
             StatementDocument statementDocument,
             String mimeType,
             String sendService
-    ) throws Exception;
+    );
 }

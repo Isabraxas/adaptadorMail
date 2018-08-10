@@ -13,19 +13,34 @@ import org.springframework.stereotype.Service;
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
+/**
+ * Service Class to send emails with attached documents
+ */
 @Service
 public class EmailService {
 
     @Autowired
     private JavaMailSender emailSender;
 
-
+    /**
+     * Method to send pdf with generic name
+     * @param mail
+     * @param bytesfile
+     * @throws MessagingException
+     */
     public void sendPdfAttached(Mail mail, byte[] bytesfile) throws MessagingException {
 
        this.sendPdfAttached(mail, bytesfile,"pdf-statement-document");
 
     }
 
+    /**
+     * Method to send pdf with custom name
+     * @param mail
+     * @param bytesfile
+     * @param nameAttachedDoc
+     * @throws MessagingException
+     */
     public void sendPdfAttached(Mail mail, byte[] bytesfile, String nameAttachedDoc) throws MessagingException {
 
         MimeMessage message = emailSender.createMimeMessage();
@@ -41,13 +56,25 @@ public class EmailService {
 
     }
 
-
+    /**
+     * Method to send csv with generic name
+     * @param mail
+     * @param bytesfile
+     * @throws MessagingException
+     */
     public void sendCsvAttached(Mail mail, byte[] bytesfile) throws MessagingException {
 
         this.sendCsvAttached(mail, bytesfile, "csv-statement-document");
 
     }
 
+    /**
+     * Method to send pdf with custom name
+     * @param mail
+     * @param bytesfile
+     * @param nameAttachedDoc
+     * @throws MessagingException
+     */
     public void sendCsvAttached(Mail mail, byte[] bytesfile, String nameAttachedDoc) throws MessagingException {
 
         MimeMessage message = emailSender.createMimeMessage();

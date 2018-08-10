@@ -8,6 +8,7 @@ import java.util.Iterator;
 import java.util.ServiceConfigurationError;
 import java.util.ServiceLoader;
 
+
 public class StatementSenderProvider {
 
     private static StatementSenderProvider service;
@@ -29,6 +30,7 @@ public class StatementSenderProvider {
         boolean processed = false;
 
         try {
+
             Iterator<StatementSender> statementSenders = loader.iterator();
             while (processed == false && statementSenders.hasNext()){
                 StatementSender ss= statementSenders.next();
@@ -42,11 +44,7 @@ public class StatementSenderProvider {
             responseSendStatement = null;
             serviceError.printStackTrace();
 
-        } catch (Exception e) {
-            responseSendStatement = null;
-            e.printStackTrace();
         }
-
         return responseSendStatement;
     }
 

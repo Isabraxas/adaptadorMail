@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
+/**
+ * Util class by convert files to bytes array implement with mailController
+ */
 public class Convert {
 
     public static byte[] readBytesFromFile(String filePath) {
